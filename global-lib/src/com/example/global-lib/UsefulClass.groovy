@@ -4,7 +4,7 @@
  * Class 'UsefulClass'
  */
 
-package com.example.global-lib
+package com.example.global_lib
 
 class UsefulClass {
     float x,y,z

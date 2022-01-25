@@ -10,6 +10,6 @@ public void somePublicFunction () {
 }
 
 private void privateFunction () {
-    echo 'Hello from privateFunction ()'
+    echo 'Hello from privateFunction () in global-lib'
 }
 

@@ -4,7 +4,7 @@
  * Class 'UsefulClass'
  */
 
-package com.example.project-lib
+package com.example.project_lib
 
 class UsefulClass {
     String name
