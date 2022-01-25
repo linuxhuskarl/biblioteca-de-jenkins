@@ -1,6 +1,6 @@
 /**
- * File 'src/com/example/global-lib/UsefulClass.groovy'
- * Library 'global-lib'
+ * File 'src/com/example/global_lib/UsefulClass.groovy'
+ * Library 'global_lib'
  * Class 'UsefulClass'
  */
 

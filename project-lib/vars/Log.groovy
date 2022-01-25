@@ -1,6 +1,6 @@
 /*
  * File '/vars/Log.groovy'
- * Library 'project-lib'
+ * Library 'project_lib'
  */
 
 public void somePublicFunction () {
@@ -10,5 +10,5 @@ public void somePublicFunction () {
 }
 
 private void privateFunction () {
-    echo 'Hello from privateFunction () in project-lib'
+    echo 'Hello from privateFunction () in project_lib'
 }
