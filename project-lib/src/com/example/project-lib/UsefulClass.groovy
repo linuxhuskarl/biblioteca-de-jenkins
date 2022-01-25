@@ -4,6 +4,8 @@
  * Class 'UsefulClass'
  */
 
+package com.example.project-lib
+
 class UsefulClass {
     String name
     def somePublicMethod(name = "default") {

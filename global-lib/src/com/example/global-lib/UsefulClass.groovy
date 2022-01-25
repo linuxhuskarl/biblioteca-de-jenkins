@@ -4,6 +4,8 @@
  * Class 'UsefulClass'
  */
 
+package com.example.global-lib
+
 class UsefulClass {
     float x,y,z
     def somePublicMethod (name='default') {
