@@ -9,6 +9,6 @@ package com.example.global_lib
 class UsefulClass {
     float x,y,z
     def somePublicMethod (name='default') {
-        echo "name: ${name} (x=${x}, y=${y}, z=${z})"
+        echo "name: ${name} (x=${x}, y=${y}, z=${z})".toString()
     }
 }
