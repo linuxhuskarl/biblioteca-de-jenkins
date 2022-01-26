@@ -12,7 +12,7 @@ class Secret {
     String sshCommand() {
         String ret = "ssh ${username}@${hostname}"
         if(password != "") {
-            ret = "sshpass -p ${} " + ret
+            ret = "sshpass -p ${password} " + ret
         }
         return ret
     }
