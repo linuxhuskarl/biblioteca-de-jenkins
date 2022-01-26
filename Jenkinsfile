@@ -1,10 +1,10 @@
 @Library('SecretProjectLibrary') _
 @Library('Utilities')
 import com.example.utils.*
-def doubler = new Calc(multiplier: 2)
 
 node {
     checkout scm
+    def doubler = new Calc(multiplier: 2)
     stage('Hello') {
         echo "doubler.doMath(4) = ${doubler.doMath(4)}"
     }
