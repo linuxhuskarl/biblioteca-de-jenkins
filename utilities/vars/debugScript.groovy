@@ -5,7 +5,5 @@
 
 def call(Closure body) {
     echo 'Calling a script block'
-    script {
-        body()
-    }
+    body()
 }
