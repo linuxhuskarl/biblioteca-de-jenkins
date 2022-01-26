@@ -2,8 +2,7 @@
 * vars/timeit.groovy
 * Simple step to measure execution time
 */
-import groovy.time.Date
-import groovy.time.TimeCategory
+import groovy.time.*
 
 def call(Closure body) {
     def timeStart = new Date()
