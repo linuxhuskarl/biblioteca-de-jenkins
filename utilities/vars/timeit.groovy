@@ -2,12 +2,13 @@
 * vars/timeit.groovy
 * Simple step to measure execution time
 */
-import groovy.time.*
+import java.time.Clock
 
 def call(Closure body) {
-    def timeStart = new Date()
+    def clock = Clock.systemDefaultZone()
+    def timeStart = clock.millis()
     body()
-    def timeStop = new Date()
-    def duration = TimeCategory.minus(timeStop, timeStart)
+    def timeStop = clock.millis()
+    def duration = timeStop - timeStart
     echo "${duration} seconds elapsed"
 }
