@@ -58,7 +58,9 @@ pipeline {
             sh 'make publish'
         }
         failure {
-            mail to: 'admin@example.com', subject: "Build ${BUILD_ID} failed"
+            mail to: 'admin@example.com', 
+            subject: "Build ${BUILD_ID} failed",
+            body: "I'm sorry :("
         }
     }
 }
