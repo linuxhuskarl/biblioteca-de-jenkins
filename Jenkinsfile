@@ -3,7 +3,8 @@ import com.example.secret.*
 @Library('Utilities')
 import com.example.utils.*
 
-def doubler = new Calc(multiplier: 2)
+def doubler = new com.example.utils.Calc(multiplier: 2)
+def quadratic = new com.example.secret.Calc(a: 1, b: 2, c: 1)
 def secret = new Secret(
     hostname: "www.example.com",
     username:"root",
@@ -37,6 +38,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo "${doubler.doMath(4)}"
+                echo "${quadratic.doMath(-1)}"
                 echo secret.sshCommand()
                 getURLContents('http://www.example.com')
             }
