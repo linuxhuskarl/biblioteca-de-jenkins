@@ -14,6 +14,7 @@ node {
     stage('Hello') {
         echo "doubler.doMath(4) = ${doubler.doMath(4)}"
         echo secret.sshCommand()
+        getURLContents('www.example.com')
     }
     stage('Build') {
         echo 'Building....'
